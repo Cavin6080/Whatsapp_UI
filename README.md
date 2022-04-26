@@ -1,16 +1,24 @@
-# whatsapp_clone
 
-A new Flutter project.
+# Whatsapp UI
 
-## Getting Started
+A completely Responsive Whatsapp UI App- works on Android, iOS, Web & Desktop! Works as WhatsApp App on Smaller Screen Sizes and WhatsApp Web on Bigger Screen Sizes!
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Demo of the app
+https://app.netlify.com/sites/keen-toffee-7745a8/overview
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
+## Installation
+After cloning this repository, migrate to ```Whatsapp_UI``` folder. There, run the following commands:
+```bash
+  flutter pub get
+  open -a simulator (to get iOS Simulator)
+  flutter run
+  flutter run -d chrome --web-renderer html (to see the best output)
+```
+    
