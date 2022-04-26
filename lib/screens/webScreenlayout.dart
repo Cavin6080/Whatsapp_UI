@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/utils/colors.dart';
-import 'package:whatsapp_clone/widgets/chat_list.dart';
-import 'package:whatsapp_clone/widgets/contact_list.dart';
-import 'package:whatsapp_clone/widgets/search_bar.dart';
-import 'package:whatsapp_clone/widgets/web_profile_bar.dart';
-import 'package:whatsapp_clone/widgets/webappbar.dart';
+import 'package:whatsapp_clone/widgets/widgets.dart';
 
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({Key? key}) : super(key: key);
@@ -18,7 +14,7 @@ class WebScreenLayout extends StatelessWidget {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                children: [
+                children: const [
                   Web_Profile_Bar(),
                   Search_bar(),
                   ContactList(),
@@ -26,18 +22,18 @@ class WebScreenLayout extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             width: MediaQuery.of(context).size.width * 0.7,
             child: Column(
               children: [
-                WebAppBar(),
-                Expanded(
+                const WebAppBar(),
+                const Expanded(
                   child: ChatList(),
                 ),
                 Container(
                   height: MediaQuery.of(context).size.width * 0.04,
                   padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(color: dividerColor),
                     ),
@@ -47,14 +43,14 @@ class WebScreenLayout extends StatelessWidget {
                     children: [
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.emoji_emotions_outlined,
                           color: Colors.grey,
                         ),
                       ),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.attach_file,
                           color: Colors.grey,
                         ),
@@ -84,7 +80,7 @@ class WebScreenLayout extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.mic,
                           color: Colors.grey,
                         ),

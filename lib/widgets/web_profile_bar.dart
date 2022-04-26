@@ -27,7 +27,7 @@ class Web_Profile_Bar extends StatelessWidget {
             ),
             radius: 20,
           ),
-          Expanded(child: SizedBox()),
+          const Expanded(child: SizedBox()),
           IconButton(
             onPressed: () {},
             icon: const Icon(

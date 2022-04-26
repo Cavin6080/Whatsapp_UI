@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/responsive/responsive_layout.dart';
-import 'package:whatsapp_clone/screens/home.dart';
 import 'package:whatsapp_clone/screens/mobileScreenLayout.dart';
 import 'package:whatsapp_clone/screens/webScreenlayout.dart';
 import 'package:whatsapp_clone/utils/colors.dart';
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
-      home: ResponsiveLayout(
+      home:const ResponsiveLayout(
         mobileScreenLayout: MobileScreenLayout(),
         webScreenLayout: WebScreenLayout(),
       ),
