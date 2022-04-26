@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/screens/home.dart';
 import 'package:whatsapp_clone/utils/colors.dart';
 import 'package:whatsapp_clone/widgets/contact_list.dart';
 
@@ -52,7 +51,15 @@ class MobileScreenLayout extends StatelessWidget {
             ],
           ),
         ),
-        body: ContactList(),
+        body: const ContactList(),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: tabColor,
+          onPressed: () {},
+          child: const Icon(
+            Icons.comment,
+            color: Colors.white,
+          ),
+        ),
       ),
     );
   }
